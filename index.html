@@ -788,6 +788,42 @@
       });
       &lt/script&gt
       &ltscript&gt
+          // using jquery
+    // $(document).ready(function () {
+    //   edits = $('.edit');
+    //   Array.from(edits).forEach((element) => {
+    //     $(element).click(function (e) {
+    //       console.log(e);
+    //       tr = e.target.parentNode.parentNode;
+    //       title = tr.getElementsByTagName('td')[0].innerText;
+    //       desc = tr.getElementsByTagName('td')[1].innerText;
+    //       console.log(title, desc);
+    //       srnedit.value = e.target.id;
+    //       console.log(e.target.id);
+    //       edittitle.value = title;
+    //       editdesc.value = desc;
+    //     });
+    //   });
+
+    //   deletes = $('.delete');
+    //   Array.from(deletes).forEach((element)=>{
+    //     $(element).click(function(e){
+    //       console.log(e);
+    //       srn = e.target.id.substr(1);
+    //       console.log(srn);
+    //       if (confirm("Are you sure to want delete this note")) {
+    //         console.log("yes");
+    //         window.location = `http://localhost/PHP_chat_app/crud?delete=${srn}`
+    //       }
+    //       else{
+    //         console.log("No");
+    //       }
+    //     })
+    //   })
+    // });
+      
+      
+      
       edits = document.getElementsByClassName('edit');
       Array.from(edits).forEach((element =&gt {
           element.addEventListener("click", (e) =&gt {
